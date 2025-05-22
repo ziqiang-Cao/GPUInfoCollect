@@ -42,7 +42,7 @@ notification_sent = False
 # 新增，指定超时时间（秒）
 CHECK_TIMEOUT = 300  # 5 分钟
 # 新增，通知地址
-NOTIFICATION_URL = "https://wxpusher.zjiecode.com/api/send/message/SPT_yI0XujM96y2AE5FYLdrX7JkkXw19/"
+NOTIFICATION_URL = "https://192.168.1.113/api/send/message/"
 NOTIFICATION_MESSAGE = "ClientsTimeout"
 
 # 新增，网页浏览计数

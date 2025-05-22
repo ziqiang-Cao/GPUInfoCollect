@@ -3,7 +3,7 @@
 
 # 配置区域（根据实际情况修改）
 PROJECT_DIR="/opt/gpu-monitor-client"  # 项目安装目录
-SERVER="http://192,168.0.100:60001/"
+SERVER="http://192.168.0.100:60001/"
 
 # 创建项目目录
 sudo mkdir -p $PROJECT_DIR
