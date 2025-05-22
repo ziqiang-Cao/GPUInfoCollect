@@ -58,9 +58,8 @@ def cleanup_clients():
     for clientid in expired_clientids:
         del clients[clientid]
 
+
 # 定时检查函数(所有客户端超时5分钟时发送客户端连接超时微信通知)
-
-
 def check_timeout():
     global last_report_time, notification_sent
     try:
