@@ -1,4 +1,4 @@
-# GPUInfoCollect
+# GPUInfoCollection
 The project comprises client and server components designed for GPU information collection and web-based visualization across multiple Ubuntu hosts.
 
 This is a management tool designed to collect GPU information within local area networks (LANs) (applicable to wide area networks/WANs provided there is a public IP address or implementation of intranet penetration). The development was motivated by the need for GPU resource management in our research group, while remaining adaptable for other usage scenarios as required.
