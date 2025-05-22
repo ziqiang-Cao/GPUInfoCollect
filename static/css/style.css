@@ -1,0 +1,134 @@
+/* GPU监控样式表 */
+body {
+    font-family: monospace;
+    margin: 2rem;
+    background: #f0f0f0;
+}
+
+.cluster-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gpu-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    break-inside: avoid;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.info-table td {
+    border: none;
+    padding: 0.1rem 0;
+    vertical-align: top;
+}
+
+.gpu-header {
+    margin: 0;
+    padding: 0;
+}
+
+.date-timestamp {
+    color: #7f8c8d;
+    font-size: 0.85em;
+    text-align: right;
+}
+
+.todesk-code {
+    color: #7f8c8d;
+    font-size: 0.85em;
+}
+
+.time-timestamp {
+    color: #7f8c8d;
+    font-size: 0.85em;
+    text-align: right;
+}
+
+.gpu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.gpu-table td {
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.gpu-index {
+    width: 80px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.gpu-model {
+    color: #2c3e50;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gpu-memory {
+    color: #3498db;
+    text-align: right;
+    min-width: 150px;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.online {
+    background: #2ecc71;
+}
+
+.offline {
+    background: #e74c3c;
+}
+
+.status-bar>#last-update::before {
+    content: "🕒";
+    font-size: 0.95em;
+    margin-right: 0.1rem;
+}
+
+.status-bar>#last-update {
+    font-size: 0.95em;
+    /* 首元素大字号 */
+    color: #db9122;
+}
+
+.timezone {
+    color: #7f8c8d;
+    font-size: 0.95em;
+    position: relative;
+    top: -1px;
+}
+
+.visit-count {
+    color: #7f8c8d;
+    font-size: 0.95em;
+    position: relative;
+    top: -1px;
+}
+
+@media (max-width: 1200px) {
+    .cluster-container {
+        grid-template-columns: 1fr;
+    }
+}
